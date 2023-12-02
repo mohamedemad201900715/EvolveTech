@@ -2,6 +2,7 @@
 :root {
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
+    --background-color:#f7f7f7;
     --sectionPadding: 90px;
 }
 
@@ -21,6 +22,7 @@ html {
 
 body {
     font-family: "Work Sans", sans-serif;
+    background-color: var(--background-color);
 }
 
 .container {
@@ -262,7 +264,55 @@ header nav .form i {
 
 }
 
+/* Start SERVICES */
+.SERVICES {
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
 
+.SERVICES .service-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 53px;
+}
+@media (max-width: 767px) {
+    .SERVICES .service-content {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+.SERVICES .col .srv {
+    display: flex;
+    margin-bottom: 55px;
+}
+
+@media (max-width: 767px) {
+    .SERVICES .col .srv {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.SERVICES .col .srv i {
+    flex-basis: 60px;
+    margin-right: 61px;
+}
+
+.SERVICES .col .srv .txt {
+    flex: 1;
+}
+
+.SERVICES .col .srv h3 {
+    color: var(--main-color);
+    margin-bottom: 33px;
+}
+
+.SERVICES .col .srv h3+p {
+    color: #777;
+    line-height: 2;
+}
+
+/* End SERVICES */
 
 
 
@@ -420,7 +470,7 @@ header nav .form i {
 }
 
 .contact-head {
-    background-color: #f7f7f7;
+    
     padding-top: var(--sectionPadding);
     padding-bottom: var(--sectionPadding);
 }
