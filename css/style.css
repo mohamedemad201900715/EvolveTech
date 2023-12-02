@@ -165,7 +165,7 @@ header nav .form i {
 /* End Header */
 /* Start landing */
 .landing {
-    background-image: url("./assets/landing-2.jpg");
+    background-image: url("../assets/landing-2.jpg");
     background-size: cover;
     max-width: 100%;
     height: 100vh;
@@ -261,6 +261,247 @@ header nav .form i {
     background-color: rgb(235,192,63);
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start supscribe */
+.supscribe {
+    background-image: url("../assets/subscribe.jpg");
+    background-size: cover;
+    max-width: 100%;
+    position: relative;
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+    color: white;
+}
+
+.supscribe::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.supscribe .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .supscribe .container {
+        flex-direction: column;
+    }
+
+}
+
+.supscribe .container form {
+    display: flex;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+}
+
+.supscribe .container form i {
+    position: absolute;
+    left: 19px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.supscribe .container form input[type="email"] {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 20px 20px 20px 60px;
+    width: calc(100% - 130px);
+    border-right: none;
+    caret-color: var(--main-color);
+}
+.supscribe .container form input[type="email"]:focus {
+    color: white;
+  }
+.supscribe .container form ::placeholder {
+    color: white;
+}
+
+.supscribe .container form input[type="submit"] {
+
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    width: 130px;
+    border: 1px solid white;
+    border-left: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.supscribe .container form input[type="email"]:focus,
+.supscribe .container form input[type="submit"]:focus {
+    outline: none;
+}
+
+.supscribe .container p {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+@media(max-width: 768px) {
+    .supscribe .container p {
+        margin-top: 30px;
+    }
+}
+
+/* End supscribe */
+/* Start contact-head  */
+.main-heading {
+    text-align: center;
+}
+
+.main-heading h2 {
+    font-weight: normal;
+    font-size: 40px;
+    margin-bottom: 60px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.main-heading h2::after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -29px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    border: 1px solid black;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+}
+
+.main-heading p {
+    width: 600px;
+    margin: 0 auto 100px;
+    line-height: 1.8;
+    max-width: 100%;
+    color: #777;
+}
+
+.contact-head {
+    background-color: #f7f7f7;
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+}
+
+.contact-head .content {
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width: 767px){
+    .contact-head .content{
+        flex-direction: column;
+    }
+}
+.contact-head .content form {
+    flex-basis: 70%;
+}
+
+.contact-head .content form .main-text {
+    display: block;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    border: 1px solid #dedadc;
+}
+.contact-head .content form .main-text:focus{
+    outline: none;
+}
+
+.contact-head .content form input[type="submit"] {
+    cursor: pointer;
+    margin-left: auto;
+    display: block;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    padding: 17px;
+    text-transform: uppercase;
+}
+
+.contact-head .content .info {
+    flex-basis: 25%;
+}
+@media(max-width: 767px){
+    .contact-head .content .info {
+        order: -1;
+        text-align: center;
+    }
+}
+.contact-head .content .info h4 {
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.contact-head .content .info .phone {
+    display: block;
+    margin-bottom: 14px;
+    color: #777;
+    font-size: 15px;
+}
+
+.contact-head .content .info h4:nth-of-type(2) {
+    margin-top: 69px;
+}
+@media(max-width: 767px){
+    .contact-head .content .info h4:nth-of-type(2) {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+.contact-head .content .info address {
+    line-height: 2;
+    color: #777;
+}
+@media(max-width: 767px){
+    .contact-head .content .info address{
+        margin-bottom: 20px;
+    }
+}
+/* End contact-head */
+
 
 
 

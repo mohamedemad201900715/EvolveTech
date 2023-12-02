@@ -6,3 +6,7 @@ const sr = ScrollReveal({
 })
 sr.reveal(`.text`, {delay:600, origin:'left'})
 sr.reveal(`header`, {delay:200, origin:'top'})
+sr.reveal(`.supscribe form`, {delay:600, origin:'left'})
+sr.reveal(`.contact-head .main-heading`, {delay:400, origin:'top'})
+
+sr.reveal(`.contact-head .content`, {delay:400, origin:'bottom'})
