@@ -369,7 +369,7 @@ header nav .form i {
 
         /* Start ourTeam */
         .our-team{
-            height: 100vh;
+            min-height: 100vh;
         }
         .our-team .text{
             display: flex;
