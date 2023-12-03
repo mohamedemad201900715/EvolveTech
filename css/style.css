@@ -190,6 +190,9 @@ header nav .form i {
 }
 
 @media (max-width: 767px) {
+    .landing .text a button{
+        width: 30%;
+    }
     .landing .text {
         width: 100%;
         padding-left: 15%;
@@ -199,6 +202,7 @@ header nav .form i {
         margin-right: auto;
 
     }
+    
 
     .landing .text .content {
         max-width: 100%;
@@ -263,6 +267,10 @@ header nav .form i {
     background-color: rgb(235,192,63);
 
 }
+@media (max-width: 767px) {
+    .landing .text a button{
+        width: 80%;
+    }}
 
 /* Start SERVICES */
 .SERVICES {
