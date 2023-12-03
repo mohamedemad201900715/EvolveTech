@@ -299,13 +299,17 @@ header nav .form i {
         flex-direction: column;
         text-align: center;
     }
+    
 }
 
 .SERVICES .col .srv i {
     flex-basis: 60px;
     margin-right: 61px;
 }
-
+@media (max-width: 767px) {
+.SERVICES .col .srv i{
+    margin-right: 0;
+}}
 .SERVICES .col .srv .txt {
     flex: 1;
 }
