@@ -30,6 +30,7 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    max-width: 100%;
 }
 
 /* Small */
@@ -494,6 +495,9 @@ header nav .form i {
 @media(max-width: 767px){
     .contact-head .content{
         flex-direction: column;
+    }
+    .main-heading p{
+        max-width: 75%;
     }
 }
 .contact-head .content form {
