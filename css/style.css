@@ -282,6 +282,7 @@ header nav .form i {
 .SERVICES {
     padding-top: var(--sectionPadding);
     padding-bottom: var(--sectionPadding);
+    width: 95%;
 }
 
 .SERVICES .service-content {
