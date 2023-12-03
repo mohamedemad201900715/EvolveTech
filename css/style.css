@@ -274,7 +274,7 @@ header nav .form i {
         width: 80%;
     }
     .landing .content p{
-        max-width: 90%;
+        max-width: 85%;
     }
 }
 
@@ -282,7 +282,7 @@ header nav .form i {
 .SERVICES {
     padding-top: var(--sectionPadding);
     padding-bottom: var(--sectionPadding);
-    width: 95%;
+    width: 100%;
 }
 
 .SERVICES .service-content {
@@ -306,6 +306,9 @@ header nav .form i {
         flex-direction: column;
         text-align: center;
     }
+    /* .SERVICES {
+        width: 89%;
+    } */
     
 }
 
@@ -384,6 +387,9 @@ header nav .form i {
     .supscribe .container {
         flex-direction: column;
     }
+    .supscribe{
+        max-width: 100vw;
+    }
 
 }
 
@@ -455,6 +461,7 @@ header nav .form i {
     margin-bottom: 60px;
     position: relative;
     text-transform: uppercase;
+    width: 99%;
 }
 
 .main-heading h2::after {
