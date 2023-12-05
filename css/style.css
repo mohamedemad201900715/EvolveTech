@@ -765,10 +765,20 @@ header nav .form i {
 .contact-head .content form .main-text:focus{
     outline: none;
 }
-
-.contact-head .content form input[type="submit"] {
+.contact-head .content .info .goole-form a{
+    display: block;
+    width: fit-content;
+}
+@media (max-width: 767px){
+    .contact-head .content .info .goole-form{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+.contact-head .content .info button {
     cursor: pointer;
-    margin-left: auto;
+    /* margin-left: auto; */
     display: block;
     background-color: var(--main-color);
     color: white;
@@ -800,7 +810,7 @@ header nav .form i {
     color: #777;
     font-size: 15px;
 }
-.contact-head .content .info div a{
+.contact-head .content .info a{
     border: none;
     text-decoration: none;
     color: gray;
