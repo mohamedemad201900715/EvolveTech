@@ -9,6 +9,24 @@ sr.reveal(`header , .main-heading , .our-team .text`, {delay:200, origin:'top'})
 sr.reveal(`.supscribe form , .card ,.service-content .col, .supscribe p ,.info , .flip-card`, {delay:300, origin:'left'})
 sr.reveal(`.contact-head .content form `, {delay:200, origin:'bottom'})
 
+document.addEventListener('DOMContentLoaded', function() {
+    var header = document.querySelector('header');
+  
+    if (window.scrollY > 0) {
+      header.classList.add('sticky');
+    }
+  
+    window.addEventListener('scroll', function() {
+      if (window.scrollY > 0) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+  });
+  
+
+
 const toggleButton = document.querySelector('.toggle-menu');
 const menu = document.querySelector('.menu');
 const listItems = document.querySelectorAll('.menu li');
@@ -46,3 +64,6 @@ document.addEventListener('click', function(event) {
         menu.style.display = '';
     }
 });
+
+
+
