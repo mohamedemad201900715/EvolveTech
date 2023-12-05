@@ -432,11 +432,22 @@ header nav .form i {
     background-color: #f3f3f3;
     color: black;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10px;
+  }
+  .flip-card-front .image{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 50px 50px 22px 22px;
+  }
+  .flip-card-front .image img{
+    width: 76%;
+    border-radius: 50px;
   }
   .flip-card-front h1{
-      font-size: 22px;
+      font-size: 20px;
   }
   .flip-card-back {
     background-color: #87b3cf;
