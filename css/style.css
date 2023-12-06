@@ -169,6 +169,9 @@ nav ul {
 }
 
 @media (max-width: 767px) {
+    header .logo img {
+        width: 48%;
+    }
     header nav .menu {
         display: none;
         flex-direction: column;
