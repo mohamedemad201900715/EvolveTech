@@ -733,7 +733,10 @@ header nav .form i {
 }
 
 .contact-head {
-    
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-top: var(--sectionPadding);
     padding-bottom: var(--sectionPadding);
 }
