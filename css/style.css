@@ -103,7 +103,6 @@ header .container {
     align-items: center;
     position: relative;
     height: 97.09px;
-    overflow: hidden;
 }
 /* header.sticky {
     position: fixed; */
@@ -151,9 +150,15 @@ header.sticky nav ul li:hover a{
 header nav ul .active a{
     color: var(--main-color);
 }
-
+header .logo{
+    overflow: hidden;
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
 header .logo img {
-    width: 35%;
+    width: 200px;
 }
 
 header nav {
@@ -170,7 +175,7 @@ nav ul {
 
 @media (max-width: 767px) {
     header .logo img {
-        width: 48%;
+        width: 200px;
     }
     header nav .menu {
         display: none;
