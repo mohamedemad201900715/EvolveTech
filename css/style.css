@@ -102,7 +102,8 @@ header .container {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    min-height: 97.09px;
+    height: 97.09px;
+    overflow: hidden;
 }
 /* header.sticky {
     position: fixed; */
@@ -152,7 +153,7 @@ header nav ul .active a{
 }
 
 header .logo img {
-    height: 40px;
+    width: 35%;
 }
 
 header nav {
@@ -772,6 +773,7 @@ header nav .form i {
     display: block;
     width: fit-content;
 }
+
 @media (max-width: 767px){
     .contact-head .content .info .goole-form{
         justify-content: center;
@@ -844,6 +846,12 @@ header nav .form i {
     .contact-head .content .info address{
         margin-bottom: 20px;
     }
+}
+.contact-head .copyright{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 12px;
+    color: var(--transparent-color);
 }
 /* End contact-head */
 
